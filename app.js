@@ -97,10 +97,10 @@ app.use((req, res) => {
   res.sendFile(path.join(buildPath, "index.html"));
 });
 
-app.use(cors({
-  origin: "https://sasiarul-voterapp.netlify.app/", // 👈 your Netlify link
-  methods: ["GET", "POST", "PUT", "DELETE"],
-}));
+// app.use(cors({
+//   origin: "https://sasiarul-voterapp.netlify.app/", // 👈 your Netlify link
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+// }));
 
 
 module.exports = app;
