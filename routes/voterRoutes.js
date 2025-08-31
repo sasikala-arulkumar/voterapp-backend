@@ -1,40 +1,4 @@
-// const express = require("express");
-// const Voter = require("../models/Voter");
-// const router = express.Router();
 
-// // Create voter
-// router.post("/", async (req, res) => {
-//   try {
-//     const voter = new Voter(req.body);
-//     await voter.save();
-//     res.status(201).json(voter);
-//   } catch (error) {
-//     res.status(400).json({ message: error.message });
-//   }
-// });
-
-// // Get all voters
-// router.get("/", async (req, res) => {
-//   try {
-//     const voters = await Voter.find();
-//     res.json(voters);
-//   } catch (error) {
-//     res.status(500).json({ message: error.message });
-//   }
-// });
-
-// // Delete voter by ID
-// router.delete("/:id", async (req, res) => {
-//   try {
-//     const voter = await Voter.findByIdAndDelete(req.params.id);
-//     if (!voter) return res.status(404).json({ message: "Voter not found" });
-//     res.json({ message: "Voter deleted successfully" });
-//   } catch (error) {
-//     res.status(500).json({ message: error.message });
-//   }
-// });
-
-// module.exports = router;
 const express = require("express");
 const mongoose = require("mongoose");
 const Voter = require("../models/Voter"); // adjust path if needed

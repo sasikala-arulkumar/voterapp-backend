@@ -81,21 +81,21 @@ app.put("/api/voters/:id", async (req, res) => {
   }
 });
 
-
+module.exports = app;
 
 
 // ✅ Serve React frontend build
 // Make sure you have copied your React build folder into backend as frontend/build
-const buildPath = path.join(__dirname, "frontend", "build");
-app.use(express.static(buildPath));
+// const buildPath = path.join(__dirname, "frontend", "build");
+// app.use(express.static(buildPath));
 
 // app.get("*", (req, res) => {
 //   res.sendFile(path.join(buildPath, "index.html"));
 // });
 
-app.use((req, res) => {
-  res.sendFile(path.join(buildPath, "index.html"));
-});
+// app.use((req, res) => {
+//   res.sendFile(path.join(buildPath, "index.html"));
+// });
 
 // app.use(cors({
 //   origin: "https://sasiarul-voterapp.netlify.app/", // 👈 your Netlify link
@@ -103,4 +103,4 @@ app.use((req, res) => {
 // }));
 
 
-module.exports = app;
+
