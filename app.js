@@ -6,9 +6,8 @@ const voterRoutes = require("./routes/voterRoutes");
 
 const app = express();
 
-const allowedOrigins = [
-  "http://localhost:3000",                  // local dev
-  "https://sasikalaarul-voterapp.netlify.app" // deployed frontend
+const allowedOrigins = [                  
+  "https://cheerful-sopapillas-b7856b.netlify.app/" // deployed frontend
 ];
 
 app.use(cors({
