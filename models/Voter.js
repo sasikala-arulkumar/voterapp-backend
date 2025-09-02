@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const voterSchema = new mongoose.Schema({
-  sno:String,
+  sno: String,
   voterName: String,
   familyHead: String,
   wifeName: String,
@@ -12,11 +12,11 @@ const voterSchema = new mongoose.Schema({
   phoneNumber: String,
   maritalStatus: String,
   work: String,
-  area:String,
+  area: String,
   address: String,
   voterId: String,
   rationCardNo: String,
-  photo: { type: String } 
-});
+  photo: String
+}, { timestamps: true });
 
 module.exports = mongoose.model("Voter", voterSchema);
