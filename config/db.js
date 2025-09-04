@@ -5,6 +5,7 @@ console.log("Loaded MONGODB_URI:", process.env.MONGO_URI ? "✅ Found" : "❌ Mi
 
 const connectDB = async () => {
   try {
+    const uri = process.env.MONGO_URI || process.env.MONGODB_URI;
     console.log("→ Connecting to:", process.env.MONGO_URI || process.env.MONGODB_URI);
 
     await mongoose.connect(process.env.MONGO_URI,{
