@@ -10,14 +10,14 @@ const app = express();
 connectDB();
 
 // 🔹 Allowed origins (both local + netlify)
-// const allowedOrigins = [
-//   "http://localhost:3000",           // local React
-//   "https://sasi-voterapp.netlify.app",
-//   "https://voterapp-c47d7.web.app",
-//   "https://voterapp-c47d7.firebaseapp.com"
+const allowedOrigins = [
+  "http://localhost:3000",           // local React
+  "https://sasi-voterapp.netlify.app",
+  "https://voterapp-c47d7.web.app",
+  "https://voterapp-c47d7.firebaseapp.com"
 
-//    // deployed frontend
-// ];
+   // deployed frontend
+];
 
 // app.use(cors({
 //     origin:["http://localhost:3000",
